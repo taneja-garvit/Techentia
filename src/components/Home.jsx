@@ -16,7 +16,7 @@ const HomePage = () => {
           company based in New York.
         </h1>
         <p className="ml-16 lg:ml-32 lg:text-left mt-10 text-lg md:text-xl lg:text-2xl text-gray-700">
-        Crafting innovative digital experiences tailored to your needs. Our team brings your vision to life with precision and creativity.
+        Crafting innovative digital experiences tailored to your needs. Our team brings your vision to life with precision and creativity
         </p>
         <button className="bg-black text-white ml-16 py-4 px-8  lg:py-8 lg:px-12 text-center rounded-full font-bold cursor-pointer lg:mr-[1080px] mt-6  ">
           Get in touch <i className="fas fa-arrow-right ml-2"></i>

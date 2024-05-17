@@ -32,7 +32,7 @@ function Footer() {
           </ul>
         </section>
         <section className="mt-8  footer__section sm:px-4 sm:mt-0 ">
-          <h3 className="text-2xl sm:text-3xl font-semibold sm:mr-0 mb-4">Contact Us</h3>
+          <h3 className="text-2xl sm:text-3xl font-semibold sm:mr-0 mb-4">Contact Us Now</h3>
           <form className="footer__form flex items-center space-x-1">
             <input type="email" placeholder="Enter your Email Address" className="bg-transparent border-2 border-black text-black px-4 py-2 rounded-xl focus:outline-none " />
             <button className="btn bg-black hover:transition-transform text-white px-4 py-2 rounded-xl">Subscribe</button>
