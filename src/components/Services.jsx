@@ -7,7 +7,7 @@ import img4 from './images/arrowimg4.png';
 function Slider() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
-        { id: 1, image: img1, heading: "Combo", desc: ["Cross platform", "Intuitive UI/UX", "Lifetime Support"], price: 250, discount: 20 },
+        { id: 1, image: img1, heading: "Combo (Web & App)", desc: ["Cross platform", "Intuitive UI/UX", "Lifetime Support"], price: 250, discount: 20 },
         { id: 2, image: img2, heading: "Video Editing", desc: ["SEO friendly site", "SSL certificate", "Lifetime Support"], price: 500, discount: 20 },
         { id: 3, image: img3, heading: "Web Development", desc: ["SEO friendly site", "SSL certificate", "Lifetime Support"], price: 700, discount: 30 },
         { id: 4, image: img4, heading: "App Development", desc: ["Cross platform", "Intuitive UI/UX", "Lifetime Support"], price: 200, discount: 20 }
@@ -35,7 +35,7 @@ function Slider() {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 3000); // Adjust the interval as needed
+        }, 5000); // Adjust the interval as needed
 
         return () => clearInterval(interval);
     }, [currentSlide]);
