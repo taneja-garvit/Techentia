@@ -37,8 +37,8 @@ function Footer() {
             <input type="email" placeholder="Enter your Email Address" className="bg-transparent border-2 border-black text-black px-4 py-2 rounded-xl focus:outline-none " />
             <button className="btn bg-black hover:transition-transform text-white px-4 py-2 rounded-xl">Subscribe</button>
           </form>
-        </section>
-      </div>
+        </section>*/}
+  </div> 
 
       <div className="container mx-auto text-center mt-12 mt-36">
         <div className='mt-36'>
@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div>
           <p>Copyright © Agency X | Designed by BRIX Templates - Powered by Webflow</p>
-        </div> */}
+        </div> 
       </div>
     </footer>
   );

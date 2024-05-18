@@ -61,7 +61,7 @@ const HomePage = () => {
 
       {/* get in touch black card */}
        
-      <section className="flex justify-center mt-8 bg-black text-white h-[350px] sm:h-[500px] w-fit">
+      <section className="flex justify-center mt-8 bg-black text-white h-[350px] sm:h-[500px] sm:w-full w-fit">
       <div className=" sm:mt-8 bg-black">
         <pre className="bg-black text-xl mr-20 font-abc font-bold mt-12 sm:text-2xl ml-[115px] ">GET IN TOUCH TODAY</pre>
         <h1 className="bg-black text-3xl ml-28 font-abc font-bold mt-10  sm:text-5xl sm:ml-20">Have an idea?</h1>
