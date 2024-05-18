@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
 
       <button
-        className={`navbar-toggler lg:hidden text-black text-2xl ${isToggled ? 'fixed right-8 top-8' : ''}`}
+        className={`navbar-toggler flex lg:hidden text-black text-2xl ${isToggled ? 'fixed right-8 top-8' : ''}`}
         onClick={handleToggle}
       >
         ☰

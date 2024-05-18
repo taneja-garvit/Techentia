@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div className=" mt-14  ">
+    <div className=" mt-14">
       <div className="lg:heading lg:text-center">
         <h1 className="ml-16 lg:ml-32 lg:text-left text-4xl md:text-7xl lg:text-7xl lg:font-bold ">
           We’re a creative design 
@@ -61,12 +61,12 @@ const HomePage = () => {
 
       {/* get in touch black card */}
        
-      <section className="flex justify-center mt-8 bg-black text-white h-[500px] ">
-      <div className="mt-5 bg-black">
-        <pre className="bg-black text-xl mr-20 font-abc font-bold mt-12 sm:text-2xl sm: ml-[115px] ">GET IN TOUCH TODAY</pre>
+      <section className="flex justify-center mt-8 bg-black text-white h-[350px] sm:h-[500px] w-fit">
+      <div className=" sm:mt-8 bg-black">
+        <pre className="bg-black text-xl mr-20 font-abc font-bold mt-12 sm:text-2xl ml-[115px] ">GET IN TOUCH TODAY</pre>
         <h1 className="bg-black text-3xl ml-28 font-abc font-bold mt-10  sm:text-5xl sm:ml-20">Have an idea?</h1>
         <h1 className="bg-black text-3xl ml-20 font-abc font-bold mt-2  sm:text-5xl sm:ml-[28px] ">Let's bring it to life.</h1>
-        <button className="mt-16 ml-[130px] sm:ml-[160px] bg-white text-black py-6 px-10 text-center rounded-full font-bold cursor-pointer mt-6 border-2 border-black">
+        <button className=" ml-[130px] sm:ml-[160px] bg-white text-black py-6 px-10 text-center rounded-full font-bold cursor-pointer mt-6 border-2 border-black">
           Get in Touch <i className="fas fa-arrow-right"></i>
         </button>
       </div>
