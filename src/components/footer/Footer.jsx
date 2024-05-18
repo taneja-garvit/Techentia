@@ -9,11 +9,11 @@ function Footer() {
           <ul className="footer__navigation space-y-1">
             <li><a href="/" className="text-xl hover:text-gray-300">Home</a></li>
             <li><a href="/" className="text-xl hover:text-gray-300">About</a></li>
-            <li><a href="/" className="text-xl hover:text-gray-300">Blog</a></li>
+            <li><a href="/" className="text-xl hover:text-gray-300">Services</a></li>
             <li><a href="./portfolio.html" className="text-xl hover:text-gray-300">Portfolio</a></li>
           </ul>
         </section>
-        <section className="footer__section sm:px-4 ">
+        {/* <section className="footer__section sm:px-4 ">
           <h3 className="text-lg font-semibold sm:mb-4 ">&nbsp;</h3>
           <ul className="footer__navigation space-y-1">
             <li><a href="/" className="text-xl hover:text-gray-300">Packages</a></li>
@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div>
           <p>Copyright © Agency X | Designed by BRIX Templates - Powered by Webflow</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     
-    <nav className="navbar flex items-center justify-between p-8 mx-auto z-50 relative">
+    <nav className="navbar flex items-center justify-between p-8 mx-auto z-50 relative sm:w-full w-[430px]">
       <div className="navbar-brand">
         <img src="./assets/logo.svg" alt="Logo" className="max-h-10 w-auto block" />
       </div>

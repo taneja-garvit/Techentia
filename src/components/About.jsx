@@ -8,7 +8,7 @@ function About() {
      <div className="mt-8">
       <div className='flex flex-col '>
         <h3 className='ml-8  font-bold text-xl'>_______ A B O U T &nbsp;U S </h3>
-        <h1 className='ml-8 mt-6 text-6xl font-bold w-[650px]'>We are an extension of your creative team</h1>
+        <h1 className='ml-8 mt-6 text-3xl sm:text-6xl font-bold '>We are an extension of your creative team</h1>
       </div>
       <div className='flex justify-center items-center'>
         {/* <p>Lorem ipsum dolor sit amet consectetur adipiscing sed morbi</p> */}

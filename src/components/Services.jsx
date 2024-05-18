@@ -42,7 +42,7 @@ function Slider() {
 
     return (
         <div className="head flex flex-col items-center gap-4 mt-8">
-            <h3 className='font-bold text-5xl'>_______ S E R V I C E S</h3>
+            <h3 className='font-bold text-2xl sm:text-5xl'>_______ S E R V I C E S</h3>
             <h1 className='text-3xl ml-5'>We offer a wide range of design services</h1>
            
             <div className="slide-container">
