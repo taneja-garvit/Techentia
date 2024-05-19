@@ -3,6 +3,9 @@ import img1 from './images/arrowimg.png';
 import img2 from './images/arrowimg1.png';
 import img3 from './images/arrowimg2.png';
 import img4 from './images/arrowimg4.png';
+import img5 from './images/dis.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight  } from '@fortawesome/free-solid-svg-icons'
 
 function Slider() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,31 +44,29 @@ function Slider() {
     }, [currentSlide]);
 
     return (
-        <div className="head flex flex-col items-center gap-4 mt-8">
-            <h3 className='font-bold text-2xl sm:text-5xl'>_______ S E R V I C E S</h3>
-            <h1 className='text-3xl ml-5'>We offer a wide range of design services</h1>
-           
-            <div className="slide-container">
-                <div className="flex flex-col items-center">
-                    <img className='w-[400px] mb-4' src={slides[currentSlide].image} alt={`Image ${slides[currentSlide].id}`} />
-                    <h2 className='text-4xl mb-2'>{slides[currentSlide].heading}</h2>
-                    <p className='text-2xl mb-1'></p>
-                    <ul className="text-lg mb-1 font-semibold flex flex-col justify-start ">
-                        {slides[currentSlide].desc.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                    <div className="price">
-                        <p className="text-lg mb-1">Original Price: ${slides[currentSlide].price}</p>
-                        <p className="text-lg mb-1">Discounted Price: ${(slides[currentSlide].price - (slides[currentSlide].price * (slides[currentSlide].discount / 100))).toFixed(0)}</p>
-                    </div>
+        <div className="head flex flex-col items-center gap-8 mt-8">
+            <h3 className="font-bold text-2xl sm:text-5xl">_______ S E R V I C E S</h3>
+            <h1 className="text-3xl sm:text-4xl ml-1">We offer a wide range of design services</h1>
+            <div className="slide-container flex flex-col items-center relative">
+                {/* Add the discount box */}
+                <img src={img5} alt="20% off" className="absolute top-0 right-0 w-24 h-24 transform rotate-12" />
+                <img className="w-[400px] mb-4" src={slides[currentSlide].image} alt={`Image ${slides[currentSlide].id}`} />
+                <h2 className="text-4xl mb-2">{slides[currentSlide].heading}</h2>
+                <ul className="text-lg mb-4 font-semibold">
+                    {slides[currentSlide].desc.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+                <div className="price flex flex-col items-center mb-4">
+                    <p className="text-lg mb-1">Original Price: ${slides[currentSlide].price}</p>
+                    <p className="text-lg mb-1">Discounted Price: ${(slides[currentSlide].price - (slides[currentSlide].price * (slides[currentSlide].discount / 100))).toFixed(0)}</p>
                 </div>
             </div>
-            <div className="btns flex justify-center gap-4  p-4 rounded-lg space-x-4 ">
-    <button className="btn prev-btn bg-black text-white px-4 py-2 rounded-md" onClick={prevSlide}>Previous</button>
-    <button className="btn next-btn bg-black text-white px-9 py-2 rounded-md" onClick={nextSlide}>Next</button>
-</div>
-
+            <div className="btns flex justify-center gap-20">
+            <FontAwesomeIcon className='' size='4x' rotation={180} onClick={prevSlide} icon={faArrowRight} />
+            <FontAwesomeIcon className='' size='4x' onClick={nextSlide} icon={faArrowRight} />
+               
+            </div>
         </div>
     );
 }

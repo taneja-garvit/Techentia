@@ -28,7 +28,6 @@ function ContactUs() {
       if (response.status === 200) {
         console.log('Form data submitted successfully!');
         setSubmitted(true);
-        // Clear form fields after submission
         setFormData({
           name: '',
           phone: '',
@@ -36,7 +35,7 @@ function ContactUs() {
           msg: ''
         });
 
-        // Hide the success msg after 3 seconds
+        // success msg hide
         setTimeout(() => {
           setSubmitted(false);
         }, 3000);

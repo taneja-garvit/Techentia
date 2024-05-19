@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './Navbar.css'
+import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import Instagram icon
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -24,13 +27,12 @@ const Navbar = () => {
   }, [isToggled]);
 
   return (
-    
-    <nav className="navbar flex items-center justify-between p-8 mx-auto z-50 relative sm:w-full w-[420px]">
+    <nav className="navbar flex items-center justify-between p-8 mx-auto z-50 relative sm:w-full">
       <div className="navbar-brand">
         <img src="./assets/logo.svg" alt="Logo" className="max-h-10 w-auto block" />
       </div>
 
-      <div className=" mr-16 hidden lg:flex space-x-8 text-black font-semibold">
+      <div className="mr-16 hidden lg:flex space-x-8 text-xl text-black font-semibold">
         <Link to="/" className="nav-item">Home</Link>
         <Link to="/about" className="nav-item">About</Link>
         <Link to="/services" className="nav-item">Services</Link>
@@ -46,16 +48,15 @@ const Navbar = () => {
       </button>
 
       <ul
-        className={`navbar-collapse fixed top-0 left-0 w-full h-full bg-black text-white flex flex-col items-center justify-center space-y-8 transform ${
+        className={`navbar-collapse fixed top-0 left-0 w-full h-full text-black flex flex-col items-center justify-center space-y-8 transform ${
           isToggled ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-500 lg:hidden`}
       >
-        <Link to="/" className="nav-item bg-black">Home</Link>
-        <Link to="/about" className="nav-item bg-black">About</Link>
-        <Link to="/services" className="nav-item bg-black">Services</Link>
-        <Link to="/portfolio" className="nav-item bg-black">Portfolio</Link>
-        <Link to="/contact" className="nav-item bg-black">Contact Us</Link>
-        
+        <Link to="/" className="nav-item">Home</Link>
+        <Link to="/about" className="nav-item">About</Link>
+        <Link to="/services" className="nav-item">Services</Link>
+        <Link to="/portfolio" className="nav-item">Portfolio</Link>
+        <Link to="/contact" className="nav-item">Contact Us</Link>
       </ul>
     </nav>
   );
