@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import Instagram icon
+import img1 from "../images/logo.png";
+
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -28,8 +30,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar flex items-center justify-between p-8 mx-auto z-50 relative sm:w-full">
-      <div className="navbar-brand">
-        <img src="./assets/logo.svg" alt="Logo" className="max-h-10 w-auto block" />
+      <div className="navbar-brand flex">
+        <img src={img1} alt="Logo" className="max-h-10 w-auto block" />
+        <div>Techentia</div>
       </div>
 
       <div className="mr-16 hidden lg:flex space-x-8 text-xl text-black font-semibold">
