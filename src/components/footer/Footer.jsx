@@ -28,8 +28,8 @@ function Footer({ path = "/"}) {
       });
   };
   return (
-    <footer className="mt-24 bg-blak text-black py-8 sm:py-12">
-        <div className="mb-8 bg-black w-full h-[.5px]"></div>
+    <footer className="mt-24  text-black py-8 sm:py-12">
+        <div className="mb-8 bg-white  w-full h-[.5px]"></div>
       <div className="container mx-auto flex flex-wrap justify-center sm:justify-around">
         <section className="footer__section px-4 sm:px-0 mb-8 sm:mb-0">
           <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pages</h3>

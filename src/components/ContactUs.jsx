@@ -23,7 +23,7 @@ function ContactUs() {
     e.preventDefault();
 
     try {
-      const response = await axios.get(`https://script.google.com/macros/s/AKfycbxSYT6jWEKQtQ78bvOQ3N7pRXOv2tuN6U4swnfCF3ZWTDLG0dPoQiV2MsQmuGaq6K0d/exec?name=${formData.name}&phone=${formData.phone}&email=${formData.email}&msg=${formData.msg}`);
+      const response = await axios.get(`https://script.google.com/macros/s/AKfycbxSYT6jWEKQtQ78bvOQ3N7pRXOv2tuN6U4swnfCF3ZWTDLG0dPoQiV2MsQmuGaq6K0d/exec?name=${formData.name}&phone=${formData.phone}&email=${formData.email}&msg=${formData.msg}`)
       
       if (response.status === 200) {
         console.log('Form data submitted successfully!');
@@ -42,6 +42,8 @@ function ContactUs() {
       } else {
         console.error('Form submission failed!');
       }
+      console.log(response)
+      console.log(formData)
     } catch (error) {
       console.error('Error submitting form data:', error);
     }
