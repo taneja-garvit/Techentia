@@ -1,45 +1,36 @@
 import React, { useState, useEffect } from "react";
-import img1 from "./images/img1.jpeg";
-import img2 from "./images/arrowimg.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { thumb1, thumb2, thumb3, thumb4 } from "../assets";
 
 const HomePage = () => {
   return (
-    <div className=" mt-14">
-      <div className="lg:heading">
-        <h1 className=" lg:text-left ml-4 lg:ml-32 text-3xl md:text-5xl lg:text-7xl font-bold">
-          We’re a creative design
-        </h1>
-        <h1 className=" lg:text-left ml-4 lg:ml-32 text-3xl md:text-5xl lg:text-7xl font-bold">
-          company based in New Delhi.
-        </h1>
-        <p className="ml-4 lg:ml-20 mt-6 text-base md:text-lg lg:text-2xl text-gray-700">
-          Crafting innovative digital experiences tailored to your needs. Our
-          team brings your vision to life with precision and creativity.
-        </p>
+    <div className="mt-14">
+
+      <div className="w-[85%] mx-auto flex flex-col gap-6 ">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold w-[80%]">We’re a creative design company based in New Delhi.</h1>
+        <p className="text-base md:text-lg lg:text-xl text-gray-700">Crafting innovative digital experiences tailored to your needs. Our team brings your vision to life with precision and creativity.</p>
         <Link to="/contact">
-          <button className="bg-black text-white sm:ml-16 ml-8 py-6 px-7  lg:py-9 lg:px-12 rounded-full font-bold cursor-pointer mt-6  ">
+          <button className="bg-black text-white py-6 px-7  lg:py-9 lg:px-12 rounded-full font-bold cursor-pointer mt-6  ">
             Get in touch{" "}
             <FontAwesomeIcon className="bg-black" icon={faArrowRight} />
           </button>
         </Link>
       </div>
 
-      {/* images card */}
-      <div className="px-4 mt-[200px] flex justify-between mx-auto w-full my-16 ">
+      <div className="px-4 mt-[200px] flex justify-between mx-auto w-[85%] my-16 ">
         <div className="w-[20%]">
-          <img src={img1} alt="Image 1" className="w-full h-full object-cover" />
+          <img src={thumb1} alt="Image 1" className="w-full h-full object-cover" />
         </div>
         <div className="w-[20%] -translate-y-24">
-          <img src={img1} alt="Image 1" className="w-full h-full object-cover" />
+          <img src={thumb2} alt="Image 1" className="w-full h-full object-cover" />
         </div>
         <div className="w-[20%]">
-          <img src={img1} alt="Image 1" className="w-full h-full object-cover" />
+          <img src={thumb3} alt="Image 1" className="w-full h-full object-cover" />
         </div>
           <div className="w-[20%] -translate-y-36">
-            <img src={img1} alt="Image 1" className="w-full h-full object-cover" />
+            <img src={thumb4} alt="Image 1" className="w-full h-full object-cover" />
         </div>
       </div>
 

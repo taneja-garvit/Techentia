@@ -1,9 +1,9 @@
 import React from 'react';
-import img3 from './images/Aboutimg.jpeg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeCompare, faCartShopping, faServer, faBook, faVideo,faArrowRight  } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { about } from '../assets';
 
 
 function About() {
@@ -19,7 +19,7 @@ function About() {
         </div>
       </div>
       <div className='mt-8'>
-        <img src={img3} style={{ width: '90%', margin: 'auto' }} alt="" />
+        <img src={about} style={{ width: '90%', margin: 'auto' }} alt="" />
       </div>
       <div className="flex items-center justify-center space-x-4">
         <Link to='/contact' className="bg-black text-white  lg:ml-16 py-4 px-8  lg:py-6 lg:px-10 text-center rounded-full font-bold cursor-pointer mt-6  ">

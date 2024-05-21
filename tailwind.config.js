@@ -5,10 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {fontFamily:{
-      abc: "Open Sans",
-    }
-
+    extend: {
+      fontFamily: {
+        abc: "Open Sans",
+      }
     },
   },
   plugins: [],
