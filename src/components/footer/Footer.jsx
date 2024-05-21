@@ -15,7 +15,7 @@ function Footer({ path = "/" }) {
       return;
     }
 
-    axios.get('(https://script.google.com/macros/s/AKfycbzgFHCKgZf8T4M6m6pFeOkp-Ai-Ys_8H8Sa7nXeTEFn8MPo9rhpFeYRnMORVfRXurGSsQ/exec?email=${email}')
+    axios.get(`https://script.google.com/macros/s/AKfycbzgFHCKgZf8T4M6m6pFeOkp-Ai-Ys_8H8Sa7nXeTEFn8MPo9rhpFeYRnMORVfRXurGSsQ/exec?email=${email}`)
       .then(res => {
         console.log(res);
         alert("Email sent successfully!");
