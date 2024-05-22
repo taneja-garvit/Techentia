@@ -42,8 +42,6 @@ function ContactUs() {
       } else {
         console.error('Form submission failed!');
       }
-      console.log(response)
-      console.log(formData)
     } catch (error) {
       console.error('Error submitting form data:', error);
     }
