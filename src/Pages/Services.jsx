@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { video, product, app, webdesign, dis } from "../assets";
 
-function Slider() {
+function Services() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
@@ -129,4 +129,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default Services;
