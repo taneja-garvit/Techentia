@@ -44,7 +44,7 @@ const Navbar = () => {
         <Link to="/about" className="">About</Link>
         <Link to="/services" className="">Services</Link>
         <Link to="/portfolio" className="">Portfolio</Link>
-        <Link to="/contact" className="">Contact Us</Link>
+        <Link to="/contact" className="">Contact </Link>
       </div>
 
       <button className={`navbar-toggler flex lg:hidden z-50 text-2xl ${isToggled ? 'text-[#f6ede7] fixed right-8 top-8' : ''}`} onClick={handleToggle} >
