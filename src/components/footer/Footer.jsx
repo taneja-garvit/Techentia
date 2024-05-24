@@ -33,8 +33,8 @@ function Footer({ path = "/" }) {
     <footer className="text-black w-[85%] mx-auto py-12 flex flex-col gap-12">
 
       <div className="mx-auto grid grid-cols-2 lg:grid-cols-3 place-items-cente gap-6 w-full">
-        <div className="flex flex-col items-center ">
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pages</h3>
+        <div className="flex flex-col ">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Useful Links</h3>
           <ul className="space-y-2">
             <li><Link to="/" className="">Home</Link></li>
             <li><Link to="/about" className="">About</Link></li>
@@ -42,11 +42,11 @@ function Footer({ path = "/" }) {
             <li><Link to="/portfolio" className="">Portfolio</Link></li>
           </ul>
         </div>
-        <div className="flex flex-col items-center ">
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Packages</h3>
+        <div className="flex flex-col ">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pricing</h3>
           <ul className=" space-y-2">
-            <li><Link to="/" className="">Packages</Link></li>
-            <li><Link to="/" className="">Packages single</Link></li>
+            <li><Link to="/services" className="">Packages</Link></li>
+            <li><Link to="/contact" className="">FAQ</Link></li>
             <li><Link to="/contact" className="">Contact</Link></li>
           </ul>
         </div>

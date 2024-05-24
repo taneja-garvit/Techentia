@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className='fixed w-full z-[100]'>
-      <div className="flex items-center justify-between py-6 lg:py-8 mx-auto z-50 relative w-[85%]">
+      <div className="flex items-center justify-between py-5 mx-auto z-50 relative w-[85%]">
         <Link to="/" className="flex items-center gap-0 md:gap-2">
           <div className="w-8 md:w-10">
             <img src={logo} alt="Logo" className="w-full h-full object-cover" />
@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link to="/contact">Contact </Link>
         </div>
 
-        <button className={`navbar-toggler flex lg:hidden z-50 text-2xl ${isToggled ? 'text-[#f6ede7] fixed right-8 top-8' : ''}`} onClick={handleToggle} >
+        <button className={`navbar-toggler flex lg:hidden z-50 text-2xl ${isToggled ? 'text-[#f6ede7] fixed right-8 top-6' : ''}`} onClick={handleToggle} >
           ☰
         </button>
       </div>

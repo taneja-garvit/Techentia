@@ -6,15 +6,15 @@ import { thumb1, thumb2, thumb3, thumb4 } from "../assets";
 
 const Home = () => {
   return (
-    <div className="pt-[10rem]">
+    <div className="pt-[7rem] md:pt-[10rem]">
 
       <div className="w-[85%] mx-auto flex flex-col gap-6 ">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold w-[80%]">We’re a creative design company based in New Delhi.</h1>
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold md:w-[80%] eading-[10rem] tracking-wide">We’re a creative design company based in New Delhi.</h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-700">Crafting innovative digital experiences tailored to your needs. Our team brings your vision to life with precision and creativity.</p>
         <Link to="/contact" className="btn btn1">Get in touch<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
       </div>
 
-      <div className="flex justify-between py-16 h-[60rem] mx-auto w-[85%] my-16 ">
+      <div className="flex justify-between pt-[8rem] h-[60vh] 2xl:h-[60rem] mx-auto w-[85%] my-16 ">
         <div className="w-[20%]">
           <img src={thumb1} alt="Image 1" className="w-full h-full object-cover" />
         </div>
@@ -29,9 +29,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center space-x-4">
-      <Link to="/contact" className="btn btn1">Get in touch<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
-      <Link to="/contact" className="btn btn2">Browse Services<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
+      <div className="flex md:flex-row flex-col gap-3 items-center justify-center">
+      <Link to="/contact" className="btn btn1 w-[14rem]">Get in touch<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
+      <Link to="/contact" className="btn btn2 w-[14rem]">Browse Services<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
       </div>
 
       <div className="flex flex-col items-center mt-8 bg-black text-white py-8 h-[400px] sm:h-[500px] ">
