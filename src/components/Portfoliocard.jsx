@@ -2,8 +2,8 @@ import React from "react";
 
 function PortfolioCard({ src, title, desc }) {
   return (
-    <div className="relative  w-full h-[40vh] overflow-hidden">
-        <video className="w-full h-[70%] object-cover" muted loop autoPlay onMouseOver={() => this.play()}
+    <div className="relative w-full h-[45vh] overflow-hidden">
+        <video className="w-full h-[65%] object-cover" muted loop autoPlay onMouseOver={() => this.play()}
           onMouseOut={() => this.pause()} preload="none">
           <source src={src} type="video/mp4" />
         </video>
