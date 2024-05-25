@@ -35,10 +35,10 @@ function Footer({ path = "/" }) {
           <div className="flex flex-col ">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Useful Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="">Home</Link></li>
-              <li><Link to="/about" className="">About</Link></li>
-              <li><Link to="/services" className="">Services</Link></li>
-              <li><Link to="/portfolio" className="">Portfolio</Link></li>
+              <li><Link to="/" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</Link></li>
+              <li><Link to="/about" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>About</Link></li>
+              <li><Link to="/services" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Services</Link></li>
+              <li><Link to="/portfolio" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Portfolio</Link></li>
             </ul>
           </div>
         </div>
@@ -46,9 +46,9 @@ function Footer({ path = "/" }) {
           <div className="flex flex-col ">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pricing</h3>
             <ul className=" space-y-2">
-              <li><Link to="/services" className="">Packages</Link></li>
-              <li><Link to="/contact" className="">FAQ</Link></li>
-              <li><Link to="/contact" className="">Contact</Link></li>
+              <li><Link to="/services" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Packages</Link></li>
+              <li><Link to="/faq" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>FAQ</Link></li>
+              <li><Link to="/contact" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Contact</Link></li>
             </ul>
           </div>
         </div>

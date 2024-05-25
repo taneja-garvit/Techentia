@@ -1,8 +1,5 @@
 import React from 'react'
-import PortfolioCard from '../components/Portfoliocard'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import PortfolioCard from '../components/cards/Portfoliocard'
 
 function Portfolio({ src, title, desc }) {
   return (

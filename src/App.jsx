@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { ImOffice } from 'react-icons/im'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { About, ContactUs, Home, Portfolio, Services } from './Pages'
+import { About, ContactUs, FAQ, Home, Portfolio, Services } from './Pages'
 import { Footer, Navbar } from './components'
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
         <Footer />
       </Router>
