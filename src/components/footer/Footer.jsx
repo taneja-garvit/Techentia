@@ -8,7 +8,6 @@ function Footer({ path = "/" }) {
   const [error, setError] = useState(null);
 
   const submit = () => {
-    // Basic email validation
     if (!email || !email.includes("@")) {
       setError("Please enter a valid email address.");
       setTimeout(() => setError(null), 2000);
@@ -17,12 +16,11 @@ function Footer({ path = "/" }) {
 
     axios.get(`https://script.google.com/macros/s/AKfycbzgFHCKgZf8T4M6m6pFeOkp-Ai-Ys_8H8Sa7nXeTEFn8MPo9rhpFeYRnMORVfRXurGSsQ/exec?email=${email}`)
       .then(res => {
-        console.log(res);
-        alert("Email sent successfully!");
-        console.log("sent");
+        setError("Email sent successfully!");
+        setTimeout(() => setError(null), 2000);
+        setEmail('')
       })
       .catch(err => {
-        console.error(err);
         setError("An error occurred. Try again later.");
         setTimeout(() => setError(null), 2000);
         return;
@@ -32,31 +30,35 @@ function Footer({ path = "/" }) {
   return (
     <footer className="text-black w-[85%] mx-auto py-12 flex flex-col gap-12">
 
-      <div className="mx-auto grid grid-cols-2 lg:grid-cols-3 place-items-cente gap-6 w-full">
-        <div className="flex flex-col ">
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Useful Links</h3>
-          <ul className="space-y-2">
-            <li><Link to="/" className="">Home</Link></li>
-            <li><Link to="/about" className="">About</Link></li>
-            <li><Link to="/services" className="">Services</Link></li>
-            <li><Link to="/portfolio" className="">Portfolio</Link></li>
-          </ul>
+      <div className="mx-auto grid grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col ">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Useful Links</h3>
+            <ul className="space-y-2">
+              <li><Link to="/" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</Link></li>
+              <li><Link to="/about" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>About</Link></li>
+              <li><Link to="/services" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Services</Link></li>
+              <li><Link to="/portfolio" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Portfolio</Link></li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col ">
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pricing</h3>
-          <ul className=" space-y-2">
-            <li><Link to="/services" className="">Packages</Link></li>
-            <li><Link to="/contact" className="">FAQ</Link></li>
-            <li><Link to="/contact" className="">Contact</Link></li>
-          </ul>
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col ">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pricing</h3>
+            <ul className=" space-y-2">
+              <li><Link to="/services" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Packages</Link></li>
+              <li><Link to="/faq" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>FAQ</Link></li>
+              <li><Link to="/contact" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Contact</Link></li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col items-center col-span-2 lg:col-span-1 gap-2">
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Contact Us Now</h3>
-          <form className="flex items-center space-x-2" onSubmit={submit}>
-            <input type="email" placeholder="Enter your Email Address" className="bg-transparent border-b-2 focus:border-b-black text-black px-4 py-2 focus:outline-none border-gray-400" onChange={e => setEmail(e.target.value)} />
-            <button className="btn bg-black text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors" onClick={submit}>Send</button>
-          </form>
-          {error && <p className="text-red-500">{error}</p>}
+        <div className="flex flex-col items-center col-span-2 lg:col-span-1">
+          <div className="flex flex-col gap-4 relative">
+            <h3 className="text-2xl sm:text-3xl font-semibold">Contact Us Now</h3>
+            <input type="email" value={email} placeholder="Enter your Email Address" className="bg-transparent border-b-2 focus:border-b-black text-black px-4 py-2 focus:outline-none border-gray-400" onChange={e => setEmail(e.target.value)} />
+            <button className="w-max bg-black py-3 px-7 rounded-3xl text-white font-semibold hover:-translate-y-[2px] transition-all ease-in duration-300" onClick={submit}>Contact</button>
+            {error && <p className="text--500 font-medium absolute -bottom-8 whitespace-nowrap">{error}</p>}
+          </div>
         </div>
       </div>
 
