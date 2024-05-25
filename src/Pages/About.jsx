@@ -8,7 +8,7 @@ import { about } from '../assets';
 
 function About() {
   return (
-    <div className='pt-[7rem] md:pt-[10rem] w-[85%] mx-auto'>
+    <div className='pt-[7rem] md:pt-[10rem] pb-[5rem] w-[85%] mx-auto'>
       <div className='flex flex-col gap-10'>
         <h3 className='font-bold text-xl'>_______ A B O U T &nbsp;U S </h3>
         <h1 className='text-3xl sm:text-6xl font-bold '>We are an extension of your creative team</h1>

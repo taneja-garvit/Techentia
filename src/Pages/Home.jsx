@@ -6,25 +6,25 @@ import { thumb1, thumb2, thumb3, thumb4 } from "../assets";
 
 const Home = () => {
   return (
-    <div className="pt-[7rem] md:pt-[10rem]">
+    <div className="pt-[7rem] md:pt-[10rem] pb-[5rem] flex flex-col gap-12">
 
       <div className="w-[85%] mx-auto flex flex-col gap-6 ">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold md:w-[80%] eading-[10rem] tracking-wide">We’re a creative design company based in New Delhi.</h1>
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold md:w-[85%] eading-[10rem] tracking-wide">We’re a creative design company based in New Delhi.</h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-700">Crafting innovative digital experiences tailored to your needs. Our team brings your vision to life with precision and creativity.</p>
         <Link to="/contact" className="btn btn1">Get in touch<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
       </div>
 
-      <div className="flex justify-between pt-[8rem] h-[60vh] 2xl:h-[60rem] mx-auto w-[85%] my-16 ">
-        <div className="w-[20%]">
+      <div className="flex justify-between pt-[8rem] h-[20rem] xs:h-[23rem] sm:h-[30rem] lg:h-[35rem] xl:h-[42.5rem] 3xl:h-[55rem] 5xl:h-[65rem] mx-auto w-[85%] ">
+        <div className="w-[22%] xs:w-[20%] lg:w-[20] 3xl:w-[18%]">
           <img src={thumb1} alt="Image 1" className="w-full h-full object-cover" />
         </div>
-        <div className="w-[20%] -translate-y-24">
+        <div className="w-[22%] xs:w-[20%] lg:w-[20] 3xl:w-[18%] -translate-y-24">
           <img src={thumb2} alt="Image 1" className="w-full h-full object-cover" />
         </div>
-        <div className="w-[20%]">
+        <div className="w-[22%] xs:w-[20%] lg:w-[20] 3xl:w-[18%]">
           <img src={thumb3} alt="Image 1" className="w-full h-full object-cover" />
         </div>
-        <div className="w-[20%] -translate-y-36">
+        <div className="w-[22%] xs:w-[20%] lg:w-[20] 3xl:w-[18%] -translate-y-36">
           <img src={thumb4} alt="Image 1" className="w-full h-full object-cover" />
         </div>
       </div>
@@ -34,7 +34,7 @@ const Home = () => {
       <Link to="/contact" className="btn btn2 w-[14rem]">Browse Services<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
       </div>
 
-      <div className="flex flex-col items-center mt-8 bg-black text-white py-8 h-[400px] sm:h-[500px] ">
+      <div className="flex flex-col items-center bg-black text-white py-8 h-[400px] sm:h-[500px] ">
         <div className="bg-black text-center mt-14 ">
           <pre className="bg-black text-xl font-abc font-bold sm:text-2xl ">
             GET IN TOUCH TODAY

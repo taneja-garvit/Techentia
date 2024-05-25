@@ -8,7 +8,7 @@ function PortfolioCard({ src, title, desc }) {
           <source src={src} type="video/mp4" />
         </video>
       <p className="text-3xl text-black font-semibold absolute bottom-8">{title}</p>
-      <p className="text-lg text-black absolute bottom-0">{desc}</p>
+      <p className="text-lg text-[#877E7E] absolute bottom-0">{desc}</p>
     </div>
   );
 }
