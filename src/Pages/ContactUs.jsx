@@ -66,7 +66,7 @@ function ContactUs() {
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-black block w-full shadow-sm" />
           </div>
           <div className="mb-4">
-            <label htmlFor="msg" className="block text-sm font-medium text-gray-700">msg</label>
+            <label htmlFor="msg" className="block text-sm font-medium text-gray-700">Message</label>
             <textarea id="msg" name="msg" value={formData.msg} onChange={handleChange} className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-black block w-full shadow-sm"></textarea>
           </div>
           <button type="submit" className="inline-flex items-center px-4 py-2 bg-black border border-transparent rounded-md font-semibold text-white uppercase tracking-widest hover:bg-gray-900 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">

@@ -9,7 +9,7 @@ const Home = () => {
     <div className="pt-[7rem] md:pt-[10rem] pb-[5rem] flex flex-col gap-12">
 
       <div className="w-[85%] mx-auto flex flex-col gap-6 ">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold md:w-[85%] eading-[10rem] tracking-wide">We’re a creative design company based in New Delhi.</h1>
+        <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold md:w-[95%] eading-[10rem] tracking-wide">Your ideas, our innovation Transforming visions into reality</h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-700">Crafting innovative digital experiences tailored to your needs. Our team brings your vision to life with precision and creativity.</p>
         <Link to="/contact" className="btn btn1">Get in touch<FontAwesomeIcon className="bg-transparent" icon={faArrowRight} /></Link>
       </div>
