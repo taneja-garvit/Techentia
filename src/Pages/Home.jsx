@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { thumb1, thumb2, thumb3, thumb4 } from "../assets";
+import Portfolio from "./Portfolio";
+import Services from "./Services";
+import About from "./About";
+import ContactUs from "./ContactUs";
+import FAQ from "./FAQ";
 
 const Home = () => {
   return (
@@ -55,7 +60,13 @@ const Home = () => {
           Get in Touch <FontAwesomeIcon className="" icon={faArrowRight} />
         </Link>
       </div>
+      <Services/>
+      <Portfolio />
+      <About />
+      <ContactUs />
+      <FAQ />
     </div>
+    
   );
 };
 

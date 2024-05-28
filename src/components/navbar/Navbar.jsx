@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import Instagram icon
 import { logo, logo2, logo3 } from '../../assets';
+import { Portfolio } from '../../Pages';
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -38,11 +39,11 @@ const Navbar = () => {
         </Link>
 
         <div className={`fixed lg:static top-0 left-0 h-screen w-screen lg:h-auto lg:w-auto lg:bg-transparent transition-all ease-in duration-300 items-center z-40 ${isToggled ? 'translate-x-0' : 'translate-x-[100%]'} lg:translate-x-0 justify-center gap-8 text-4xl bg-black text-[#f6ede7] lg:text-black font-bold lg:text-xl lg:font-medium flex flex-col lg:flex-row lg:gap-8`}>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact </Link>
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</Link>
+          <Link to="/" onClick={() => window.scrollTo({ top: 5630, left: 0, behavior: 'smooth' })}>About</Link>
+          <Link to="/" onClick={() => window.scrollTo({ top: 2000, left: 0, behavior: 'smooth' })}>Services</Link>
+          <Link to="/" onClick={() => window.scrollTo({ top: 4450, left: 0, behavior: 'smooth' })}>Portfolio</Link>
+          <Link to="/" onClick={() => window.scrollTo({ top: 7200, left: 0, behavior: 'smooth' })}>Contact </Link>
         </div>
 
         <button className={`navbar-toggler flex lg:hidden z-50 text-2xl ${isToggled ? 'text-[#f6ede7] fixed right-8 top-6' : ''}`} onClick={handleToggle} >
