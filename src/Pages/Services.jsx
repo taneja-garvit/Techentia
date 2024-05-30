@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { video, product, app, webdesign, dis } from "../assets";
 
-function Services() {
+function Services({servicesRef}) {
   const [slides, setSlides] = useState([
     {
       id: 1,
@@ -48,7 +48,7 @@ function Services() {
   ])
 
   return (
-    <div className='pt-[7rem] md:pt-[10rem] pb-[5rem] w-[85%] mx-auto'>
+    <div ref={servicesRef} className='pt-[4.5rem] md:pt-[7rem] w-[85%] mx-auto'>
 
       <div className='flex flex-col gap-10'>
         <h3 className='font-bold text-xl'>_______ S E R V I C E S</h3>

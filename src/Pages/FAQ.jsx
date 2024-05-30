@@ -1,9 +1,9 @@
 import React from 'react'
 import { FAQCard } from '../components'
 
-function FAQ() {
+function FAQ({faqRef}) {
   return (
-    <div className="pt-[7rem] md:pt-[10rem] pb-[5rem] w-[85%] mx-auto">
+    <div ref={faqRef} className="pt-[4.5rem] md:pt-[7rem] w-[85%] mx-auto">
       <div className='flex flex-col gap-10'>
         <h3 className='font-bold text-xl'>_______ F A Q S</h3>
         <h1 className='text-3xl sm:text-6xl font-bold'>Frequently Asked Questions</h1>

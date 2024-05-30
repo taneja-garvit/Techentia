@@ -9,9 +9,11 @@ import About from "./About";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 
-const Home = () => {
+const Home = ({ homeRef,aboutRef,servicesRef,portfolioRef,contactRef,faqRef}) => {
+
   return (
-    <div className="pt-[7rem] md:pt-[10rem] pb-[5rem] flex flex-col gap-12">
+
+    <div ref={homeRef} className="pt-[7rem] md:pt-[10rem] pb-[5rem] flex flex-col gap-12">
 
       <div className="w-[85%] mx-auto flex flex-col gap-6 ">
         <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold md:w-[95%] eading-[10rem] tracking-wide">Your ideas, our innovation Transforming visions into reality</h1>
@@ -60,11 +62,12 @@ const Home = () => {
           Get in Touch <FontAwesomeIcon className="" icon={faArrowRight} />
         </Link>
       </div>
-      <Services/>
-      <Portfolio />
-      <About />
-      <ContactUs />
-      <FAQ />
+
+      <Services servicesRef={servicesRef} />
+      <Portfolio portfolioRef={portfolioRef} />
+      <About aboutRef={aboutRef} />
+      <ContactUs contactRef={contactRef} />
+      <FAQ faqRef={faqRef} />
     </div>
     
   );

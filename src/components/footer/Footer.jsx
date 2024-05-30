@@ -3,9 +3,17 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { logo, logo2 } from '../../assets';
 
-function Footer({ path = "/" }) {
+function Footer({ homeRef, aboutRef, servicesRef,portfolioRef,contactRef,faqRef}) {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      window.scrollTo({ top: ref.current.offsetTop, left: 0, behavior: 'smooth' });
+    } else {
+      console.error(ref);
+    }
+  };
 
   const submit = () => {
     if (!email || !email.includes("@")) {
@@ -30,15 +38,15 @@ function Footer({ path = "/" }) {
   return (
     <footer className="text-black w-[85%] mx-auto py-12 flex flex-col gap-12">
 
-      <div className="mx-auto grid grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+      <div className="mx-auto grid grid-cols-2 lg:grid-cols-3 gap-y-6 md:gap-6 w-full">
         <div className="flex flex-col items-center">
           <div className="flex flex-col ">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Useful Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</Link></li>
-              <li><Link to="/about" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>About</Link></li>
-              <li><Link to="/services" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Services</Link></li>
-              <li><Link to="/portfolio" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Portfolio</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(homeRef)}>Home</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(aboutRef)}>About</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(servicesRef)}>Services</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(portfolioRef)}>Portfolio</Link></li>
             </ul>
           </div>
         </div>
@@ -46,9 +54,9 @@ function Footer({ path = "/" }) {
           <div className="flex flex-col ">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-4">Pricing</h3>
             <ul className=" space-y-2">
-              <li><Link to="/services" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Packages</Link></li>
-              <li><Link to="/faq" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>FAQ</Link></li>
-              <li><Link to="/contact" className="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Contact</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(servicesRef)}>Packages</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(faqRef)}>FAQ</Link></li>
+              <li><Link to="/" className="" onClick={() => scrollToSection(contactRef)}>Contact</Link></li>
             </ul>
           </div>
         </div>
