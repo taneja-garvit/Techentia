@@ -9,7 +9,7 @@ function Portfolio({portfolioRef}) {
         <h1 className='text-3xl sm:text-6xl font-bold'>Here are are some of our samples provided</h1>
         <div className='gap-x-8 gap-y-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center'>
           <PortfolioCard src={'https://res.cloudinary.com/dser8edfz/video/upload/v1728362435/aurora_p7gfhu.mp4'} title='Send Me Hugs' desc="Fundraiser" />
-          <PortfolioCard src="nimbi.mp4" title='Nimbi' desc="Crypto project" />
+          <PortfolioCard src="video3.mp4" title='Nimbi' desc="Crypto project" />
           <PortfolioCard src={'https://res.cloudinary.com/dser8edfz/video/upload/v1732801557/evhsbgkusbw5mh1gbbxu.mp4'} title='Nika' desc="Portfolio website" />
           <PortfolioCard src="video4.mp4" title='AI_Bank' desc="Payment Invoicing Service" />
           <PortfolioCard src="brainwave.mp4" title='Brainwave' desc="AI powered website" />
